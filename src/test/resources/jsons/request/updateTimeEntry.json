@@ -1,0 +1,14 @@
+{
+  "url": "{{base.url}}",
+  "headers": {
+    "X-Api-Key": "{{api-key}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "description": "{{description}}",
+    "end": "2023-11-26T16:15:22Z",
+    "projectId": "65270c5ec237c146a685614b",
+    "start": "2023-11-26T14:15:22Z"
+  },
+  "endpoint": "/v1/workspaces/{{id-workspace}}/time-entries/{{id-timeEntry}}"
+}

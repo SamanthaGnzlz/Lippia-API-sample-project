@@ -1,15 +1,22 @@
 package api.config;
 
-import services.UserService;
+import services.TimeEntryService;
+import services.WorkspaceService;
 
 public enum EntityConfiguration {
-
-    USER {
+    WORKSPACE {
         @Override
         public Class<?> getEntityService() {
-            return UserService.class;
+            return WorkspaceService.class;
+        }
+    },
+    TIME_ENTRY {
+        @Override
+        public Class<?> getEntityService() {
+            return TimeEntryService.class;
         }
     };
+
 
     public abstract Class<?> getEntityService();
 }
